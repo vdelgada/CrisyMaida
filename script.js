@@ -17,9 +17,22 @@ const errorMessages = [
   "Igual os hemos sobreestimado",
 ];
 
+const runawayButtonMessages = [
+  "Jeje se mas rapida",
+  "Ups",
+  "Le das o que",
+  "Eso te pasa por fallar",
+];
+
 let failedAttempts = 0;
 let isButtonRunning = false;
 let remainingButtonEscapes = 0;
+let runawayButtonMessageIndex = 0;
+
+function rotateRunawayButtonText() {
+  submitButton.textContent = runawayButtonMessages[runawayButtonMessageIndex];
+  runawayButtonMessageIndex = (runawayButtonMessageIndex + 1) % runawayButtonMessages.length;
+}
 
 function moveButtonOnce() {
   const buttonRect = submitButton.getBoundingClientRect();
@@ -77,6 +90,7 @@ function moveButtonAway() {
 
   isButtonRunning = true;
   remainingButtonEscapes -= 1;
+  rotateRunawayButtonText();
   moveButtonOnce();
 
   window.setTimeout(() => {
@@ -112,6 +126,7 @@ dateForm.addEventListener("submit", (event) => {
     feedback.textContent = "¿Veis como era facil? Ahora a contar billetes guapas :)";
     feedback.classList.add("is-success");
     remainingButtonEscapes = 0;
+    submitButton.textContent = "Probar";
     submitButton.style.setProperty("--run-x", "0px");
     submitButton.style.setProperty("--run-y", "0px");
     return;
