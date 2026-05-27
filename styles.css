@@ -216,18 +216,20 @@ button:active {
   .experience {
     place-items: start center;
     padding: 22px 16px 28px;
+    background:
+      linear-gradient(rgba(248, 245, 239, 0.42), rgba(248, 245, 239, 0.42)),
+      url("foto.jpeg") center center / contain no-repeat,
+      #f8f5ef;
   }
 
   .experience::before {
-    background-position: center center;
-    background-size: contain;
-    opacity: 0.3;
+    display: none;
   }
 
   .experience::after {
     background:
-      radial-gradient(ellipse at center, rgba(255, 253, 249, 0.8) 0%, rgba(255, 253, 249, 0.66) 52%, rgba(255, 253, 249, 0.44) 100%),
-      linear-gradient(180deg, rgba(255, 253, 249, 0.12), rgba(71, 35, 54, 0.08));
+      radial-gradient(ellipse at center, rgba(255, 253, 249, 0.5) 0%, rgba(255, 253, 249, 0.34) 52%, rgba(255, 253, 249, 0.18) 100%),
+      linear-gradient(180deg, rgba(255, 253, 249, 0.04), rgba(71, 35, 54, 0.04));
   }
 
   .date-game {
@@ -237,7 +239,7 @@ button:active {
   .guess-panel {
     padding: 20px 8px;
     background:
-      radial-gradient(ellipse at center, rgba(255, 253, 249, 0.8) 0%, rgba(255, 253, 249, 0.64) 62%, rgba(255, 253, 249, 0.08) 78%, transparent 100%);
+      radial-gradient(ellipse at center, rgba(255, 253, 249, 0.66) 0%, rgba(255, 253, 249, 0.46) 62%, rgba(255, 253, 249, 0.08) 78%, transparent 100%);
   }
 
   h1 {
