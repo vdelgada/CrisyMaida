@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peña la Piña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="experience">
+      <section class="date-game" aria-labelledby="page-title">
+        <div class="guess-panel">
+          <h1 id="page-title">Peña la Piña</h1>
+          <div class="intro">
+            <p>No nos hemos puesto de acuerdo en la moneda que queríamos usar, así que os hemos metido un batiburrillo de lo que hemos encontrado por ahí.</p>
+            <p>En lo que sí nos hemos puesto de acuerdo es en no daros tampoco la fecha, así que os dejamos esto para que probéis.</p>
+            <p><strong>CUIDADO</strong> porque no va a ser tan sencillo y dado que es una fecha importante y que lo vais a hacer juntas vamos a ser un poco cabrones cada vez que falléis.</p>
+            <p>Esperemos que disfrutéis de este jueguito.</p>
+            <p>Os queremos</p>
+          </div>
+
+          <form class="date-form" id="date-form">
+            <label for="date-input">Fecha</label>
+            <div class="input-row">
+              <input id="date-input" name="date" type="date" required>
+              <button type="submit">Probar</button>
+            </div>
+            <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
