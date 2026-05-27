@@ -77,6 +77,17 @@ input {
   z-index: 2;
 }
 
+.version-stamp {
+  position: fixed;
+  right: 10px;
+  bottom: 8px;
+  z-index: 4;
+  color: rgba(44, 43, 45, 0.42);
+  font-size: 0.68rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
 .guess-panel {
   width: min(100%, 650px);
   padding: clamp(18px, 4vw, 44px) clamp(14px, 4vw, 44px);
