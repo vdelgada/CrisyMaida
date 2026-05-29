@@ -1,4 +1,4 @@
-const TARGET_DATE = "2026-09-12";
+const TARGET_DATE = "2024-06-08";
 
 const dateForm = document.querySelector("#date-form");
 const dateInput = document.querySelector("#date-input");
@@ -6,7 +6,7 @@ const feedback = document.querySelector("#feedback");
 const submitButton = dateForm.querySelector("button");
 
 const errorMessages = [
-  "¿Enserio? va, darle una vuelta.",
+  "¿Enserio? va, dadle una vuelta.",
   "¿Esa fecha era importante?",
   "Ala mañas espabilad",
   "Mira me estoy empezando a cansar",
@@ -18,9 +18,9 @@ const errorMessages = [
 ];
 
 const runawayButtonMessages = [
-  "Jeje se mas rapida",
+  "Jeje séd más rápidas",
   "Ups",
-  "Le das o que",
+  "Le das o qué",
   "Eso te pasa por fallar",
 ];
 
